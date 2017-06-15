@@ -79,7 +79,11 @@ public class UniversalRM {
 		decode(prog.get(j));
 	}
 	private void minus(int i, int j, int k) {
-		
+		//if greater then 0, subtract and goto j, else k
+		if (regs.get(i)>0) {
+			regs.set(i,regs.get(i)-1);
+			decode(prog.get(j));
+		} else decode(prog.get(k));
 	}
 	private void halt() {
 		System.out.println(args);
