@@ -74,7 +74,9 @@ public class UniversalRM {
 		}
 	}
 	private void add(int i, int j) {
-		
+		//add 1 to reg i and run instruction j
+		regs.set(i,regs.get(i));
+		decode(prog.get(j));
 	}
 	private void minus(int i, int j, int k) {
 		
