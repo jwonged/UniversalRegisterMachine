@@ -1,21 +1,14 @@
 package uk.ac.cam.dsjw2.RegisterMachine;
 
-import java.util.ArrayList;
-
 public class RegisterMachine {
 
 	public static void main(String[] args) {
-		/*Scanner in = new Scanner(System.in);
-		System.out.println("Enter encoded program: ");
-		e = in.nextLine();
-		System.out.println("Enter encoded arguments list: ");
-		a = in.nextLine();*/
+		int e = Integer.parseInt(args[0]);
+		int a = Integer.parseInt(args[1]);
 		
-		UniversalRM rm = new UniversalRM(0,0);
-		rm.decode(18);
+		UniversalRM rm = new UniversalRM(e,a);
+		rm.compute();
 		
-		
-
 	}
 
 }
