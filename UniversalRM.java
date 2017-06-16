@@ -89,8 +89,8 @@ public class UniversalRM {
 		System.out.println(args);
 	}
 	public void compute() {
-		int N = prog.get(0);
-		
+		if (prog.isEmpty()) decode(0);
+		else decode(prog.get(0));
 	}
 
 }
